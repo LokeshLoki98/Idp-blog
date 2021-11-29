@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="container">
+              <div class="row">
+                
+                  <form [formGroup]="alldetails" >
+                      <div class="form-group">
+                        <label class="blog-form-input"> Title:</label>
+                        <input formControlName="title" type="text" class="form-control">
+                        <small *ngIf="title.invalid && title.touched" class="text-danger">Title is Required</small>  
+                      </div>
+                      <div class="form-group">
+                        <label class="blog-form-input"> URL:</label>
+                        <input formControlName="url" type="text" class="form-control" readonly >
+                      </div>
+                      <div class="form-group">
+                        <label class="blog-form-input">Author:</label>
+                        <input formControlName="author" type="text" class="form-control" >
+                        <small *ngIf="author.invalid && author.touched" class="text-danger">Author is Required</small>
+                      </div>
+                      <div class="form-group">
+                        <label class="blog-form-input">Description:</label>
+                        <input formControlName="description" type="text" class="form-control" >
+                        <small *ngIf="description.invalid && description.touched" class="text-danger">Description is Required</small>
+                      </div>
+                      <div class="form-group">
+                        <label class="blog-form-input">Image:</label>
+                        <input formControlName="urlToImage" type="text" class="form-control" >
+                        <small *ngIf="urlToImage.invalid && urlToImage.touched" class="text-danger">Image is Required</small>
+                      </div>
+                      <div class="form-group">
+                        <label class="blog-form-input">Content:</label>
+                        <input formControlName="content" class="form-control" >
+                        <small *ngIf="content.invalid && content.touched" class="text-danger"> Content is Required</small> 
+                      </div> 
+                      <button  type="submit"  (click)=blogs(alldetails) [disabled]="alldetails.invalid" >Submit</button>
+                    </form>
+              </div>
+          </div>
+      </div>

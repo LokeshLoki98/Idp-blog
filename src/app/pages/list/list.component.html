@@ -1,0 +1,17 @@
+<div class="body">
+
+  <div class="cards"*ngFor="let item of array1 ,let i = index">
+    <div class="container"  *ngIf="i < 5">
+      <p><img src="{{item.urlToImage}}" onerror="this.src='assets/images/download.png'" ></p>
+      <p id="p1">{{item.title}}</p>
+      <p id="p2">{{item.description}}</p>
+      <p id="p2">{{item.publishedAt|date:'medium'}}</p>
+    </div><br>
+  </div>
+
+  <div class="readmore">
+    <button  (click)="readmore()" >Read more</button>
+    
+  </div>
+
+</div>

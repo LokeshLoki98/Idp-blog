@@ -1,0 +1,38 @@
+.container{
+  width:50%;
+  margin: 0 auto;
+  background-color: white;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+p#p1{
+  font-family:BuenosAires-Light;
+  font-weight: 300;
+  font-size: 26px;
+  text-align: center;
+}
+#p1:hover{
+  color: #0082dd;
+}
+
+img{
+  width:100%;
+}
+button{
+  padding: 8px;
+  background-color: aqua;
+  border-radius: 8px;
+}
+.readmore{
+  margin: 0 auto;
+  width: 9%;
+}
+.body{
+  background-color: blue;
+}
+a{
+  color:blue;
+  cursor: pointer;
+}
+

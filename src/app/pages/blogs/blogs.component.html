@@ -1,0 +1,11 @@
+<div class="body">
+  <div class="container">
+    <div class="cards" *ngFor='let item of array1,let i = index'>
+      <p><img src="{{item.urlToImage}}" onerror="this.src='assets/images/download.png'"></p>
+      <p id="p1">{{item.title}}</p>
+      <p id="p2">{{item.description}}</p>
+      <a  (click)="view(item.url)">Read more</a>
+    </div><br>
+  </div>
+</div>
+
